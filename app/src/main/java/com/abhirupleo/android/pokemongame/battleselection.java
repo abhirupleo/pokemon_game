@@ -2,14 +2,16 @@ package com.abhirupleo.android.pokemongame;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class battleselection extends AppCompatActivity {
 
-    Button button;
+    Button button_pikachu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +23,9 @@ public class battleselection extends AppCompatActivity {
 
         final Context context = this;
 
-        button = (Button) findViewById(R.id.pikachu_vs_charmander);
+        button_pikachu = (Button) findViewById(R.id.pikachu_vs_charmander);
 
-        button.setOnClickListener(new View.OnClickListener() {
+        button_pikachu.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View arg0) {

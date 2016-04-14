@@ -7,12 +7,14 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/battle1_background"
     tools:context="com.abhirupleo.android.pokemongame.battle1">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Pikachu vs Charmander"
+        android:textColor="@color/text"
         android:textSize="32sp"
         android:textAlignment="center"
         android:layout_alignParentTop="true"
@@ -22,6 +24,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/text"
+        android:layout_marginTop="30dp"
         android:text="Pikachu"
         android:textSize="25sp"
         android:layout_margin="20dp"
@@ -32,6 +36,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/text"
         android:text="Charmander"
         android:textSize="25sp"
         android:id="@+id/charmander_name"
@@ -47,6 +52,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/text"
             android:textSize="20sp"
             android:text="Thunderbolt"
             android:id="@+id/radioButton" />
@@ -54,6 +60,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/text"
             android:textSize="20sp"
             android:text="Bolt Tackle"
             android:id="@+id/radioButton2" />
@@ -61,6 +68,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/text"
             android:textSize="20sp"
             android:text="Quick Attack"
             android:id="@+id/radioButton3" />
@@ -68,6 +76,7 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/text"
             android:textSize="20sp"
             android:text="Thundershock"
             android:id="@+id/radioButton4" />
@@ -76,6 +85,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/text"
         android:text="Ember"
         android:textSize="20sp"
         android:layout_margin="5dp"
@@ -86,6 +96,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/text"
         android:text="Scratch"
         android:layout_margin="5dp"
         android:textSize="20sp"
@@ -96,6 +107,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/text"
         android:text="Fireblast"
         android:layout_margin="5dp"
         android:textSize="20sp"
@@ -106,6 +118,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/text"
         android:layout_margin="5dp"
         android:text="Bite"
         android:textSize="20sp"
@@ -116,19 +129,30 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/text"
         android:textAlignment="center"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Attack Log"
         android:id="@+id/attacklog"
-        android:layout_above="@+id/attack_button"
+        android:layout_alignParentBottom="true"
         android:layout_marginTop="15dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="10dp"
         android:layout_centerHorizontal="true" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/label_pikachu"
+        android:layout_marginTop="40dp">
     <Button
         android:id="@+id/attack_button"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
         android:layout_height="wrap_content"
+        android:textColor="@color/text"
+        android:background="@drawable/button"
+        android:layout_margin="5dp"
+        android:padding="5dp"
         android:text="Attack"
         android:textSize="32sp"
         android:layout_alignParentBottom="true"
@@ -136,17 +160,23 @@
         android:layout_alignStart="@+id/radio_group" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:textColor="@color/text"
         android:text="Refresh"
         android:textSize="32sp"
+        android:background="@drawable/button"
         android:id="@+id/refresh"
         android:layout_alignBottom="@+id/attack_button"
         android:layout_alignEnd="@+id/title" />
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/text"
         android:layout_marginTop="15dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="HP : 100 "
@@ -158,6 +188,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/text"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="HP : 100"
         android:id="@+id/label_charmander"
