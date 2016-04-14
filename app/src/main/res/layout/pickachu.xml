@@ -161,8 +161,8 @@
         android:text="HP : 100 "
         android:id="@+id/label_pikachu"
         android:layout_marginLeft="10dp"
-        android:layout_alignStart="@+id/bite_attack"
-        android:layout_below="@+id/radio_group"/>
+        android:layout_alignStart="@+id/radio_group"
+        android:layout_below="@+id/bite_attack"/>
 
     <TextView
         android:layout_width="wrap_content"
