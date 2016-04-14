@@ -151,39 +151,6 @@
         android:layout_marginBottom="10dp"
         android:layout_centerHorizontal="true" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/label_pikachu"
-        android:layout_marginTop="40dp">
-    <Button
-        android:id="@+id/attack_button"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="wrap_content"
-        android:textColor="@color/text"
-        android:background="@drawable/button"
-        android:layout_margin="5dp"
-        android:padding="5dp"
-        android:text="Attack"
-        android:textSize="32sp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp"
-        android:layout_alignStart="@+id/radio_group" />
-
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:layout_weight="1"
-        android:textColor="@color/text"
-        android:text="Refresh"
-        android:textSize="32sp"
-        android:background="@drawable/button"
-        android:id="@+id/refresh"
-        android:layout_alignBottom="@+id/attack_button"
-        android:layout_alignEnd="@+id/title" />
-    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
@@ -194,8 +161,8 @@
         android:text="HP : 100 "
         android:id="@+id/label_pikachu"
         android:layout_marginLeft="10dp"
-        android:layout_alignStart="@+id/radio_group"
-        android:layout_below="@+id/bite_attack"/>
+        android:layout_alignStart="@+id/bite_attack"
+        android:layout_below="@+id/radio_group"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -206,6 +173,39 @@
         android:id="@+id/label_charmander"
         android:layout_alignStart="@+id/bite_attack"
         android:layout_alignTop="@+id/label_pikachu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/label_pikachu"
+        android:layout_marginTop="40dp">
+        <Button
+            android:id="@+id/attack_button"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text"
+            android:background="@drawable/button"
+            android:layout_margin="5dp"
+            android:text="Attack"
+            android:textSize="32sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_alignStart="@+id/radio_group" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:textColor="@color/text"
+            android:text="Refresh"
+            android:textSize="32sp"
+            android:background="@drawable/button"
+            android:id="@+id/refresh"
+            android:layout_alignBottom="@+id/attack_button"
+            android:layout_alignEnd="@+id/title" />
+    </LinearLayout>
 
 
 </RelativeLayout>

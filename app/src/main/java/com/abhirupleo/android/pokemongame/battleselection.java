@@ -24,7 +24,7 @@ public class battleselection extends AppCompatActivity {
         final Context context = this;
 
         button_pikachu = (Button) findViewById(R.id.pikachu_vs_charmander);
-
+        button_pikachu.setBackgroundResource(R.drawable.button_background);
         button_pikachu.setOnClickListener(new View.OnClickListener() {
 
             @Override
